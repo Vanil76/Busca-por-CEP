@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/47c9c0ca1a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <script src="script_cep.js"></script>
+    <link rel="stylesheet" href="style_cep.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div id="container">
+            <div id="logo">
+                <i class="fas fa-search"></i>
+                <h1>Digite o cep</h1>
+            </div>
+            <div id="container-form">
+                <form action="">
+                    <input placeholder="Digite o cep sem traço" type="number" placeholder="digite o cep" id='cep' onblur="buscaCep(this.value)">
+                    <input type="text" id='rua' readonly>
+                    <input type="text" id='bairro' readonly>
+                    <input type="text" id='localidade' readonly>
+                    <input type="text" id='uf' readonly>
+                </form> 
+            </div> 
+            <div id="atualizar">
+                <button onclick="atualizar()">Atualizar página</button>
+            </div>
+        </div>
+    </header>  
+</body>
+</html>
